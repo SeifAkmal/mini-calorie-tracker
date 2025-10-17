@@ -1,0 +1,25 @@
+/* Colors */
+$primary-color: #eaf2ff;
+$secondary-color: rgba(255, 255, 255, 0.65);
+$accent-color: #ff6b6b;
+$background-color: #071428;
+$error-color: #f44336;
+
+/* Fonts */
+$font-main: "Inter", sans-serif;
+$font-size-base: 16px;
+$font-size-lg: 28px;
+$font-size-md: 13px;
+$font-size-sm: 12px;
+
+/* Border Radius */
+$radius-sm: 10px;
+$radius-md: 14px;
+
+/* Shadows */
+$shadow-sm: 0 1px 2px #030a14;
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 0 15px rgba(0, 0, 0, 0.2);
+
+/* Filters */
+$default-backdrop: blur(10px);

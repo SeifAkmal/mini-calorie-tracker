@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@use "app/styles/variables" as *;
+@use "app/styles/placeHolders" as *;
+
+body {
+  font-family: $font-main;
+  background-color: $background-color;
+  color: $primary-color;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @extend %normal-flexable;
+}
+
+p {
+  color: $secondary-color;
+  font-size: $font-size-md;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
