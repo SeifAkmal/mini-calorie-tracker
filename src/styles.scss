@@ -4,10 +4,10 @@
 body {
   font-family: $font-main;
   background-color: $background-color;
-  color: $primary-color;
-  font-size: $font-size-base;
   margin: 0;
   padding: 0;
+  color: $primary-color;
+  padding-top: 28px;
   box-sizing: border-box;
   @extend %normal-flexable;
 }
@@ -16,6 +16,18 @@ p {
   color: $secondary-color;
   font-size: $font-size-md;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: $font-size-sm;
+  color: $secondary-color;
 }

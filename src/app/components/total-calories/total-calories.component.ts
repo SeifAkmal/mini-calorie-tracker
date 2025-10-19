@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { CalorieService } from '../../services/calorie.service';
 
 @Component({
   selector: 'app-total-calories',
   standalone: true,
-  imports: [],
   templateUrl: './total-calories.component.html',
-  styleUrl: './total-calories.component.scss'
+  styleUrls: ['./total-calories.component.scss'],
 })
 export class TotalCaloriesComponent {
+  constructor(public _calorieService: CalorieService) {}
 
+  clearAllMeals() {
+    this._calorieService.clearAll();
+  }
 }

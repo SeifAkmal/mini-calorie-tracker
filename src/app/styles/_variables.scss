@@ -1,25 +1,40 @@
 /* Colors */
+$gradient-color: linear-gradient(to right, #4ea8ff, #8bd3ff);
+$background-gradient: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 0.02) 0%,
+  rgba(255, 255, 255, 0.01) 100%
+);
 $primary-color: #eaf2ff;
 $secondary-color: rgba(255, 255, 255, 0.65);
-$accent-color: #ff6b6b;
+$delete-color: #ff6b6b;
 $background-color: #071428;
 $error-color: #f44336;
 
 /* Fonts */
 $font-main: "Inter", sans-serif;
-$font-size-base: 16px;
 $font-size-lg: 28px;
-$font-size-md: 13px;
-$font-size-sm: 12px;
+$font-size-md: 24px;
+$font-size-sm: 13px;
 
 /* Border Radius */
 $radius-sm: 10px;
 $radius-md: 14px;
 
 /* Shadows */
-$shadow-sm: 0 1px 2px #030a14;
-$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-$shadow-lg: 0 0 15px rgba(0, 0, 0, 0.2);
+
+$button-shadow: 0 6px 14px rgba(78, 168, 255, 0.14);
+$card-shadow: 0 6px 14px rgba(3, 10, 20, 0.5);
 
 /* Filters */
 $default-backdrop: blur(10px);
+
+// Input Style //
+$input-bg: #0f1720;
+$input-border: rgba(255, 255, 255, 0.06);
+$input-border-focus: #4fd1c5; // accent
+$input-color: #e6eef8;
+$input-placeholder: rgba(230, 238, 248, 0.4);
+$input-radius: 12px;
+$input-padding: 12px 14px;
+$transition-fast: 150ms ease;

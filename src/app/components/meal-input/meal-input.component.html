@@ -1,1 +1,41 @@
-<p>meal-input works!</p>
+<div class="total-continer">
+  <form #addMealForm="ngForm" (ngSubmit)="onSubmit(addMealForm)">
+    <input
+      name="meal"
+      type="text"
+      required
+      minlength="2"
+      maxlength="15"
+      [(ngModel)]="userMeal.meal"
+      placeholder="Meal Name"
+      #meal="ngModel"
+    />
+
+    <input
+      name="calories"
+      type="text"
+      required
+      pattern="^[0-9]*$"
+      [(ngModel)]="userMeal.calories"
+      placeholder="kcal"
+      #calories="ngModel"
+    />
+    <button type="submit" [disabled]="addMealForm.invalid">Add</button>
+  </form>
+
+  <p>Enter meal name and its calories then press Add.</p>
+
+  <div class="errors">
+    @if (meal.errors?.['required'] && meal.touched) {
+    <span>Meal Name is required.</span>
+    } @else if (meal.errors?.['minlength'] && meal.touched) {
+    <span>Meal Name is minlength 2 words.</span>
+    } @else if (meal.errors?.['maxlength'] && meal.touched) {
+    <span>Meal Name is minlength 15 words.</span>
+    } @else if (calories.invalid && meal.touched) {
+    <span>Please enter numbers only.</span>
+    } @else if (addMealForm.invalid && addMealForm.touched) {
+    <span> Please fill in all inputs correctly before submitting.</span>
+    }
+  </div>
+</div>

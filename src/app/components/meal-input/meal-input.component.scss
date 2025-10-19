@@ -1,2 +1,18 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+.total-continer {
+  @extend %basic-card-style;
+  form {
+    @extend %cards-flexable;
+    align-items: baseline;
+    button {
+      @extend %button-style;
+    }
+    input {
+      @extend %input-style;
+    }
+  }
+  span {
+    @extend %error-style;
+  }
+}

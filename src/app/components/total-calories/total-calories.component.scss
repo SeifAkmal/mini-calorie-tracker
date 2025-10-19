@@ -1,2 +1,11 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+.total-container{
+  @extend %basic-card-style;
+  div {
+    @extend %cards-flexable;
+    button {
+      @extend %delete-style;
+    }
+  }
+}

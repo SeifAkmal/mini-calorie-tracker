@@ -1,1 +1,12 @@
-<p>total-calories works!</p>
+<div class="total-container">
+  <div>
+    <p>Total Calories Today</p>
+    <p>Meals: {{ _calorieService.getTotalMeals() }}</p>
+  </div>
+  <div>
+    <h2>{{ _calorieService.totalCalories }} kcal</h2>
+    <button (click)="clearAllMeals()">Clear All</button>
+  </div>
+</div>
+
+
