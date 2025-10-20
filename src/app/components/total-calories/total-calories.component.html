@@ -1,12 +1,10 @@
-<div class="total-container">
+<div class="container">
   <div>
     <p>Total Calories Today</p>
-    <p>Meals: {{ _calorieService.getTotalMeals() }}</p>
+    <p>Meals: {{ CalorieService.getTotalMeals() }}</p>
   </div>
   <div>
-    <h2>{{ _calorieService.totalCalories }} kcal</h2>
-    <button (click)="clearAllMeals()">Clear All</button>
+    <h2>{{ CalorieService.totalCalories }} kcal</h2>
+    <button class="delete" (click)="clearAllMeals()">Clear All</button>
   </div>
 </div>
-
-

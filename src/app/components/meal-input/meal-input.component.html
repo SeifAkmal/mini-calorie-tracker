@@ -1,14 +1,12 @@
-<div class="total-continer">
+<div class="container">
   <form #addMealForm="ngForm" (ngSubmit)="onSubmit(addMealForm)">
     <input
       name="meal"
       type="text"
       required
-      minlength="2"
-      maxlength="15"
       [(ngModel)]="userMeal.meal"
       placeholder="Meal Name"
-      #meal="ngModel"
+      #meal="ngModel" 
     />
 
     <input
@@ -26,16 +24,10 @@
   <p>Enter meal name and its calories then press Add.</p>
 
   <div class="errors">
-    @if (meal.errors?.['required'] && meal.touched) {
+    @if (meal.invalid && (meal.touched || meal.dirty)) {
     <span>Meal Name is required.</span>
-    } @else if (meal.errors?.['minlength'] && meal.touched) {
-    <span>Meal Name is minlength 2 words.</span>
-    } @else if (meal.errors?.['maxlength'] && meal.touched) {
-    <span>Meal Name is minlength 15 words.</span>
-    } @else if (calories.invalid && meal.touched) {
+    } @else if (calories.invalid && (calories.touched || calories.dirty)) {
     <span>Please enter numbers only.</span>
-    } @else if (addMealForm.invalid && addMealForm.touched) {
-    <span> Please fill in all inputs correctly before submitting.</span>
     }
   </div>
 </div>

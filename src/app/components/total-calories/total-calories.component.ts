@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CalorieService } from '../../services/calorie.service';
 
 @Component({
@@ -7,10 +7,13 @@ import { CalorieService } from '../../services/calorie.service';
   templateUrl: './total-calories.component.html',
   styleUrls: ['./total-calories.component.scss'],
 })
-export class TotalCaloriesComponent {
-  constructor(public _calorieService: CalorieService) {}
+export class TotalCaloriesComponent implements OnInit {
+  constructor(public CalorieService:CalorieService) {}
 
+  ngOnInit() {
+    this.CalorieService.getTotalCaloriesFromStorage();
+  }
   clearAllMeals() {
-    this._calorieService.clearAll();
+    this.CalorieService.clearAll();
   }
 }

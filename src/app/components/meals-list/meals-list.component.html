@@ -1,1 +1,15 @@
-<p>meals-list works!</p>
+<div class="container">
+  <div>
+    <h3>Meals</h3>
+    <p>Newest on top</p>
+  </div>
+  @if (meals.length) { @for (item of meals; track $index) {
+  <div class="userMeal">
+    <span>
+      <h4>{{ item.meal }}</h4>
+      <p>{{ item.calories }}</p>
+    </span>
+    <button class="delete" (click)="deleteMeal($index)">Delete</button>
+  </div>
+  }}
+</div>

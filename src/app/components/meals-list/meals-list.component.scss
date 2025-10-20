@@ -1,2 +1,17 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+
+.container {
+  div {
+    @extend %cards-flexable;
+    span {
+      @extend %cards-flexable;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+  }
+  .userMeal {
+    @extend %basic-card-style;
+    margin-top: 10px;
+  }
+}

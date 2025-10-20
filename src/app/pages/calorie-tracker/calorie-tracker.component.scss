@@ -1,9 +1,8 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
 
-.container {
+section {
   max-width: 1100px;
-  // background-color: #0004ff34;
   header {
     margin-bottom: 30px;
     h1 {

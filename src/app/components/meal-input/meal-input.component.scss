@@ -1,6 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
-.total-continer {
+.container{
   @extend %basic-card-style;
   form {
     @extend %cards-flexable;

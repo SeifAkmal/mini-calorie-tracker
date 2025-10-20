@@ -31,3 +31,13 @@ p {
   font-size: $font-size-sm;
   color: $secondary-color;
 }
+
+.container {
+  @extend %basic-card-style;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 30px;
+}
+.delete {
+  @extend %delete-style;
+}
