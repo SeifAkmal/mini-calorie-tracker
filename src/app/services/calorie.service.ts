@@ -10,7 +10,7 @@ export class CalorieService {
   addMeal(meal: { meal: string; calories: number }) {
     const parsedCalories = Number(meal.calories); //  To ensure that the calories return numbers not string
     const mealData = { meal: meal.meal, calories: parsedCalories };
-    this.meals.push(mealData);
+    this.meals.unshift(mealData);
     this.updateAfterChange();
     return this.meals;
   }

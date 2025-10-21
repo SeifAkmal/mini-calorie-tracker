@@ -16,7 +16,11 @@ export class MealInputComponent {
     calories: '',
   };
   onSubmit(addMealForm: NgForm) {
-    this._CalorieService.addMeal(addMealForm.value);
-    addMealForm.resetForm();
+    if (!addMealForm.invalid) {
+      this._CalorieService.addMeal(addMealForm.value);
+      addMealForm.resetForm();
+    } else {
+      alert('Enter meal name and its calories then press Add.');
+    }
   }
 }

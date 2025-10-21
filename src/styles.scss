@@ -41,3 +41,6 @@ p {
 .delete {
   @extend %delete-style;
 }
+.card-header {
+  margin-bottom: 10px;
+}
