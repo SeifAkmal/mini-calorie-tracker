@@ -9,15 +9,15 @@ import { CalorieService } from '../../services/calorie.service';
   styleUrl: './meals-list.component.scss',
 })
 export class MealsListComponent implements OnInit {
-  constructor(private calorieService: CalorieService) {}
+  constructor(private _calorieService: CalorieService) {}
 
   get meals() {
-    return [...this.calorieService.meals];
+    return [...this._calorieService.meals];
   }
   ngOnInit() {
-    this.calorieService.getMealsFromStorage();
+    this._calorieService.getMealsFromStorage();
   }
   deleteMeal(mealIndex: number) {
-    this.calorieService.deleteMeal(mealIndex);
+    this._calorieService.deleteMeal(mealIndex);
   }
 }

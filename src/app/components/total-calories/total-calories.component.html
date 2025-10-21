@@ -1,10 +1,10 @@
 <div class="container">
   <div class="card-header">
     <p>Total Calories Today</p>
-    <p>Meals: {{ CalorieService.getTotalMeals() }}</p>
+    <p>Meals: {{ calorieService.getTotalMeals() }}</p>
   </div>
   <div>
-    <h2>{{ CalorieService.totalCalories }} kcal</h2>
+    <h2>{{ calorieService.totalCalories }} kcal</h2>
     <button class="delete" (click)="clearAllMeals()">Clear All</button>
   </div>
 </div>

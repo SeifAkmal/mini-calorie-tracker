@@ -10,17 +10,15 @@ import { CalorieService } from '../../services/calorie.service';
   styleUrl: './meal-input.component.scss',
 })
 export class MealInputComponent {
-  constructor(private _CalorieService: CalorieService) {}
+  constructor(private _calorieService: CalorieService) {}
   userMeal: { meal: string; calories: string } = {
     meal: '',
     calories: '',
   };
   onSubmit(addMealForm: NgForm) {
-    if (!addMealForm.invalid) {
-      this._CalorieService.addMeal(addMealForm.value);
+    if (addMealForm.valid) {
+      this._calorieService.addMeal(addMealForm.value);
       addMealForm.resetForm();
-    } else {
-      alert('Enter meal name and its calories then press Add.');
-    }
+    } 
   }
 }

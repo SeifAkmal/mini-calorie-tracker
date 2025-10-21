@@ -6,7 +6,7 @@
       required
       [(ngModel)]="userMeal.meal"
       placeholder="Meal Name"
-      #meal="ngModel" 
+      #meal="ngModel"
     />
 
     <input
@@ -24,7 +24,9 @@
   <p>Enter meal name and its calories then press Add.</p>
 
   <div class="errors">
-    @if (meal.invalid && (meal.touched || meal.dirty)) {
+    @if (addMealForm.invalid && addMealForm.submitted) {
+    <span>Oops! Tell me the meal name and calories first</span>
+    } @else if (meal.invalid && (meal.touched || meal.dirty)) {
     <span>Meal Name is required.</span>
     } @else if (calories.invalid && (calories.touched || calories.dirty)) {
     <span>Please enter numbers only.</span>

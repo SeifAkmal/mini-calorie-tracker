@@ -8,12 +8,12 @@ import { CalorieService } from '../../services/calorie.service';
   styleUrls: ['./total-calories.component.scss'],
 })
 export class TotalCaloriesComponent implements OnInit {
-  constructor(public CalorieService:CalorieService) {}
+  constructor(public calorieService:CalorieService) {}
 
   ngOnInit() {
-    this.CalorieService.getTotalCaloriesFromStorage();
+    this.calorieService.getTotalCaloriesFromStorage();
   }
   clearAllMeals() {
-    this.CalorieService.clearAll();
+    this.calorieService.clearAll();
   }
 }
