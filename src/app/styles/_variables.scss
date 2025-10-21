@@ -1,5 +1,5 @@
 /* Colors */
-$gradient-color: linear-gradient(to right, #4ea8ff, #8bd3ff);
+$primary-gradient: linear-gradient(to right, #4ea8ff, #8bd3ff);
 $background-gradient: linear-gradient(
   to bottom,
   rgba(255, 255, 255, 0.02) 0%,
@@ -28,13 +28,3 @@ $card-shadow: 0 6px 14px rgba(3, 10, 20, 0.5);
 
 /* Filters */
 $default-backdrop: blur(10px);
-
-// Input Style //
-$input-bg: #0f1720;
-$input-border: rgba(255, 255, 255, 0.06);
-$input-border-focus: #4fd1c5; // accent
-$input-color: #e6eef8;
-$input-placeholder: rgba(230, 238, 248, 0.4);
-$input-radius: 12px;
-$input-padding: 12px 14px;
-$transition-fast: 150ms ease;

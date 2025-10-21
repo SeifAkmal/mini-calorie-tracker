@@ -6,7 +6,7 @@
     @extend %cards-flexable;
     align-items: baseline;
     button {
-      @extend %button-style;
+      @extend %button-delete;
     }
     input {
       @extend %input-style;

@@ -9,7 +9,7 @@ body {
   color: $primary-color;
   padding-top: 28px;
   box-sizing: border-box;
-  @extend %normal-flexable;
+  @extend %normal-flexible;
 }
 
 p {

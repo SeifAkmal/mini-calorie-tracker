@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-%normal-flexable {
+%normal-flexible {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,14 +29,14 @@
   cursor: pointer;
 }
 
-%text-gradiant {
-  background: $gradient-color;
+%text-gradient {
+  background: $primary-gradient;
   background-clip: text;
   color: transparent;
 }
 
-%button-style {
-  background: $gradient-color;
+%button-delete {
+  background: $primary-gradient;
   font-size: $font-size-sm;
   box-shadow: $button-shadow;
   font-weight: 800;
@@ -55,11 +55,8 @@
   background: transparent;
   max-width: 110px;
   color: $primary-color;
-  transition: all 0.3s;
   outline: none;
-  &::placeholder {
-    color: $input-placeholder;
-  }
+  transition: border-color 0.3s;
   &:focus {
     border-color: rgba(255, 255, 255, 0.24);
   }
