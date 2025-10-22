@@ -42,5 +42,6 @@ p {
   @extend %delete-style;
 }
 .card-header {
+  @extend %cards-flexible;
   margin-bottom: 10px;
 }

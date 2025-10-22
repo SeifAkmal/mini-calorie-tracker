@@ -1,2 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+
+.container {
+  min-width: 716px;
+}

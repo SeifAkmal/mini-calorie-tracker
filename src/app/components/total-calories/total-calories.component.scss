@@ -2,6 +2,6 @@
 @use "../../styles/placeHolders" as *;
 .container {
   div {
-    @extend %cards-flexable;
+    @extend %cards-flexible;
   }
 }

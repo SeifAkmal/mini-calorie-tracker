@@ -3,9 +3,9 @@
 
 .container {
   div {
-    @extend %cards-flexable;
+    @extend %cards-flexible;
     span {
-      @extend %cards-flexable;
+      @extend %cards-flexible;
       justify-content: flex-start;
       gap: 12px;
     }

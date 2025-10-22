@@ -1,1 +1,30 @@
-<p>statistics works!</p>
+<div class="container">
+  <header class="card-header">
+    <h3>Statistics</h3>
+    <p>Summary</p>
+  </header>
+
+  <section>
+    <article class="summary-content">
+      <div>
+        <h2>{{ calorieService.totalCalories }} kcal</h2>
+        <p>Total Calories</p>
+      </div>
+      <div>
+        <h2>{{ calorieService.getTotalMeals() }}</h2>
+        <p>Meals</p>
+      </div>
+    </article>
+    <article class="summary-content">
+      <div>
+        <h2>{{ calorieService.avgCalories }} kcal</h2>
+        <p>Avg per Meal</p>
+      </div>
+      <div>
+        <h2>{{ calorieService.maxCalories }}</h2>
+        <p>Highest Meal</p>
+      </div>
+    </article>
+  </section>
+  <button class="delete" (click)="clearAllMeals()">Delete All Meals</button>
+</div>

@@ -3,7 +3,7 @@
 .container{
   @extend %basic-card-style;
   form {
-    @extend %cards-flexable;
+    @extend %cards-flexible ;
     align-items: baseline;
     button {
       @extend %button-delete;

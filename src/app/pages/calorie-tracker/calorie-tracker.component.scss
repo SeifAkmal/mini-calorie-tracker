@@ -1,13 +1,15 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
 
-section {
-  max-width: 1100px;
-  header {
-    margin-bottom: 30px;
-    h1 {
-      font-size: $font-size-md;
-      @extend %text-gradient ;
-    }
+header {
+  margin-bottom: 30px;
+  h1 {
+    font-size: $font-size-md;
+    @extend %text-gradient;
   }
+}
+main {
+  max-width: 1100px;
+  @extend %normal-flexible;
+  align-items: flex-start;
 }

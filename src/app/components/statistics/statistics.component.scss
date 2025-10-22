@@ -1,2 +1,17 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+.container {
+  min-width: 716px;
+  section {
+    @extend %cards-flexible;
+    justify-content: space-around;
+
+    .summary-content {
+      margin-top: 22px;
+      div {
+        text-align: center;
+        padding-bottom: 36px;
+      }
+    }
+  }
+}

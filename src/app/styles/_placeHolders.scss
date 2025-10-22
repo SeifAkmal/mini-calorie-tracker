@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
-%cards-flexable {
+%cards-flexible {
   display: flex;
   justify-content: space-between;
   align-items: center;
