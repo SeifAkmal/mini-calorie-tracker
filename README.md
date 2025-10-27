@@ -35,7 +35,7 @@ git clone https://github.com/SeifAkmal/mini-calorie-tracker.git
 cd mini-calorie-tracker
 npm install
 ng serve
-
+```
 **Open Locally:**  
 ➡️ [http://localhost:4200/](http://localhost:4200/)
 
