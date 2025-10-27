@@ -37,10 +37,10 @@ npm install
 ng serve
 
 **Open Locally:**  
-➡️ http://localhost:4200/
+➡️ [http://localhost:4200/](http://localhost:4200/)
 
 **Live Demo:**  
-🌐 https://mini-calories-tracker.netlify.app/
+🌐 [https://mini-calories-tracker.netlify.app/](https://mini-calories-tracker.netlify.app/)
 
 
 
