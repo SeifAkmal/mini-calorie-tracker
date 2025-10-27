@@ -1,27 +1,47 @@
-# CalorieTracker
+# 🥗 Mini Calorie Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Track your daily meals and stay aware of your calorie intake with a clean and responsive Angular application.
 
-## Development server
+![App Screenshot](public/web-page.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ✨ Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ➕ Add, delete, and display meals instantly
+- 🔥 Auto-calculated statistics (Total, Average, Highest calories)
+- 💾 Persistent data using LocalStorage
+- 📱 Fully responsive UI built with SCSS
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🧰 Tech Stack
 
-## Running unit tests
+| Technology | Usage |
+|------------|-------|
+| Angular    | Main framework |
+| TypeScript | App logic & typing |
+| SCSS       | Styling & layout |
+| LocalStorage | Saves data in the browser |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🚀 Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone the repo and run the project locally:
 
-## Further help
+```bash
+git clone https://github.com/SeifAkmal/mini-calorie-tracker.git
+cd mini-calorie-tracker
+npm install
+ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Open Locally:**  
+➡️ http://localhost:4200/
+
+**Live Demo:**  
+🌐 https://mini-calories-tracker.netlify.app/
+
+
+
+
