@@ -9,13 +9,15 @@ export class CalorieService {
   avgCalories: number = 0;
   maxCalories: number = 0;
 
+  // add a new meal and update totals
   addMeal(meal: { meal: string; calories: number }) {
-    const parsedCalories = Number(meal.calories); //  To ensure that the calories return numbers not string
+    const parsedCalories = Number(meal.calories);
     const mealData = { meal: meal.meal, calories: parsedCalories };
     this.meals.unshift(mealData);
     this.updateAfterChange();
     return this.meals;
   }
+  // delete a meal by index and update totals
   deleteMeal(mealIndex: number) {
     this.meals.splice(mealIndex, 1);
     this.updateAfterChange();
@@ -44,6 +46,7 @@ export class CalorieService {
     this.totalCalories = 0;
     this.updateAfterChange();
   }
+  // update all totals and save everything
   updateAfterChange() {
     this.calculateTotalCalories();
     this.calculateAvgCalories();
@@ -52,6 +55,7 @@ export class CalorieService {
     this.saveAvgCaloriesToStorage();
     this.saveMaxCaloriesToStorage();
   }
+  // save/load meals, total, avrage, and max calories from localStorage
   saveMealsToStorage() {
     localStorage.setItem('userMeals', JSON.stringify(this.meals));
   }

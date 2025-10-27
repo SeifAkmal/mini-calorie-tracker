@@ -1,15 +1,31 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
-.container{
+@use "../../styles/_mixins.scss" as *;
+.container {
   @extend %basic-card-style;
   form {
-    @extend %cards-flexible ;
+    @extend %cards-flexible;
+    flex-wrap: wrap;
     align-items: baseline;
+    @include respond(tablet) {
+      gap: 10px;
+    }
+
     button {
       @extend %button-delete;
     }
     input {
       @extend %input-style;
+    }
+
+    @include respond(mobile) {
+      button {
+        margin-bottom: 10px;
+      }
+      input,
+      button {
+        width: 100%;
+      }
     }
   }
   span {

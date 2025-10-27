@@ -1,15 +1,41 @@
 @use "../../styles/variables" as *;
 @use "../../styles/placeHolders" as *;
+@use "../../styles/_mixins.scss" as *;
 
-header {
-  margin-bottom: 30px;
-  h1 {
-    font-size: $font-size-md;
-    @extend %text-gradient;
+.calorie-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  header {
+    margin-bottom: 30px;
+    h1 {
+      font-size: $font-size-md;
+      @extend %text-gradient;
+    }
+
+    @include respond(tablet) {
+      text-align: center;
+    }
   }
-}
-main {
-  max-width: 1100px;
-  @extend %normal-flexible;
-  align-items: flex-start;
+  main {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    .left-panel {
+      width: 40%;
+    }
+    .right-panel {
+      width: 60%;
+    }
+
+    @include respond(tablet) {
+      flex-direction: column;
+      gap: 10px;
+      .left-panel,
+      .right-panel {
+        width: 100%;
+      }
+    }
+  }
 }

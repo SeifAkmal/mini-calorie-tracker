@@ -8,7 +8,13 @@ import { TipsComponent } from '../../components/tips/tips.component';
 @Component({
   selector: 'app-calorie-tracker',
   standalone: true,
-  imports: [TotalCaloriesComponent,MealInputComponent, MealsListComponent,StatisticsComponent,TipsComponent],
+  imports: [
+    TotalCaloriesComponent,
+    MealInputComponent,
+    MealsListComponent,
+    StatisticsComponent,
+    TipsComponent,
+  ],
   templateUrl: './calorie-tracker.component.html',
   styleUrl: './calorie-tracker.component.scss',
 })

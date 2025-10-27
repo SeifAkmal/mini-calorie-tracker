@@ -6,7 +6,7 @@
   @if (meals.length) { @for (item of meals; track $index) {
   <div class="userMeal">
     <span>
-      <h4>{{ item.meal }} </h4>
+      <h4>{{ item.meal }}</h4>
       <p>{{ item.calories }} kcal</p>
     </span>
     <button class="delete" (click)="deleteMeal($index)">Delete</button>

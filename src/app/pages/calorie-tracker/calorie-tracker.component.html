@@ -1,16 +1,18 @@
-<header>
-  <h1>Calorie Tracker</h1>
-  <p>Quickly add meals & track daily calories</p>
-</header>
+<div class="calorie-container">
+  <header>
+    <h1>Calorie Tracker</h1>
+    <p>Quickly add meals & track daily calories</p>
+  </header>
 
-<main>
-  <section>
-    <app-total-calories></app-total-calories>
-    <app-meal-input></app-meal-input>
-    <app-meals-list></app-meals-list>
-  </section>
-  <section>
-    <app-statistics></app-statistics>
-    <app-tips></app-tips>
-  </section>
-</main>
+  <main>
+    <section class="left-panel">
+      <app-total-calories></app-total-calories>
+      <app-meal-input></app-meal-input>
+      <app-meals-list></app-meals-list>
+    </section>
+    <section class="right-panel">
+      <app-statistics></app-statistics>
+      <app-tips></app-tips>
+    </section>
+  </main>
+</div>

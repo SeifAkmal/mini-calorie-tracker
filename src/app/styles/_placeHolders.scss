@@ -1,17 +1,22 @@
 @use "variables" as *;
+@use "mixins" as *;
 
+// Flex utilities
 %normal-flexible {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
+
 %cards-flexible {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+// Card styling
 %basic-card-style {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: $radius-md;
@@ -21,6 +26,7 @@
   box-shadow: $card-shadow;
 }
 
+// Button & delete styling
 %delete-style {
   color: $delete-color;
   font-size: $font-size-sm;
@@ -28,12 +34,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-%text-gradient {
-  background: $primary-gradient;
-  background-clip: text;
-  color: transparent;
 }
 
 %button-delete {
@@ -48,21 +48,31 @@
   cursor: pointer;
 }
 
+// Text gradient
+%text-gradient {
+  background: $primary-gradient;
+  background-clip: text;
+  color: transparent;
+}
+
+// Input styling
 %input-style {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: $radius-md;
   padding: 19px;
   margin-bottom: 18px;
   background: transparent;
-  max-width: 110px;
+  max-width: 30%;
   color: $primary-color;
   outline: none;
   transition: border-color 0.3s;
+
   &:focus {
     border-color: rgba(255, 255, 255, 0.24);
   }
 }
 
+// Error messages
 %error-style {
   margin-top: 5px;
   font-size: $font-size-sm;

@@ -1,46 +1,43 @@
 @use "app/styles/variables" as *;
 @use "app/styles/placeHolders" as *;
+@use "app/styles/_mixins.scss" as *;
 
 body {
-  font-family: $font-main;
-  background-color: $background-color;
   margin: 0;
-  padding: 0;
-  color: $primary-color;
-  padding-top: 28px;
+  padding: 28px 0 0 0;
   box-sizing: border-box;
-  @extend %normal-flexible;
-}
+  font-family: $font-main;
+  color: $primary-color;
+  background-color: $background-color;
 
-p {
-  color: $secondary-color;
-  font-size: $font-size-md;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
+  @extend %normal-flexible;
 }
 
 p {
   font-size: $font-size-sm;
   color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   @extend %basic-card-style;
-  min-width: 400px;
-  max-width: 400px;
-  min-height: 30px;
 }
+
 .delete {
   @extend %delete-style;
 }
+
 .card-header {
   @extend %cards-flexible;
   margin-bottom: 10px;
