@@ -6,10 +6,12 @@
     justify-content: space-around;
 
     .summary-content {
-      margin-top: 22px;
+      margin: 22px 0 42px;
       div {
         text-align: center;
-        padding-bottom: 36px;
+        &:first-child {
+          padding-bottom: 36px;
+        }
       }
     }
   }

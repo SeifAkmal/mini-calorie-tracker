@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  flex-direction: column;
 }
 
 %cards-flexible {
@@ -36,13 +36,13 @@
   cursor: pointer;
 }
 
-%button-delete {
+%button-gradient {
   background: $primary-gradient;
   font-size: $font-size-sm;
   box-shadow: $button-shadow;
   font-weight: 800;
   border: none;
-  border-radius: 10px;
+  border-radius: $radius-sm;
   padding: 12px 19px;
   color: #022436;
   cursor: pointer;

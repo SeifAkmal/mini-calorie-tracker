@@ -12,19 +12,18 @@
     }
 
     button {
-      @extend %button-delete;
+      @extend %button-gradient;
     }
     input {
       @extend %input-style;
     }
-
     @include respond(mobile) {
-      button {
-        margin-bottom: 10px;
-      }
       input,
       button {
         width: 100%;
+      }
+      button {
+        margin-bottom: 10px;
       }
     }
   }

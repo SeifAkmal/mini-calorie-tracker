@@ -2,15 +2,14 @@
 @use "../../styles/placeHolders" as *;
 
 .container {
-  div {
+  span {
     @extend %cards-flexible;
-    span {
-      @extend %cards-flexible;
-      justify-content: flex-start;
-      gap: 12px;
-    }
+    justify-content: flex-start;
+    gap: 12px;
   }
+
   .userMeal {
+    @extend %cards-flexible;
     @extend %basic-card-style;
     margin-top: 10px;
   }

@@ -4,7 +4,7 @@
       name="meal"
       type="text"
       required
-      [(ngModel)]="userMeal.meal"
+      ngModel
       placeholder="Meal Name"
       #meal="ngModel"
     />
@@ -14,7 +14,7 @@
       type="text"
       required
       pattern="^[0-9]*$"
-      [(ngModel)]="userMeal.calories"
+      ngModel
       placeholder="kcal"
       #calories="ngModel"
     />
