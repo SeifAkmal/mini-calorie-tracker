@@ -15,7 +15,6 @@ export class CalorieService {
     const mealData = { meal: meal.meal, calories: parsedCalories };
     this.meals.unshift(mealData);
     this.updateAfterChange();
-    return this.meals;
   }
   // delete a meal by index and update totals
   deleteMeal(mealIndex: number) {
@@ -42,8 +41,6 @@ export class CalorieService {
   }
   clearAll() {
     this.meals = [];
-    this.avgCalories = 0;
-    this.totalCalories = 0;
     this.updateAfterChange();
   }
   // update all totals and save everything
@@ -60,24 +57,24 @@ export class CalorieService {
     localStorage.setItem('userMeals', JSON.stringify(this.meals));
   }
   getMealsFromStorage() {
-    const savedData = localStorage.getItem('userMeals');
-    this.meals = savedData ? JSON.parse(savedData) : [];
+    const userMeals = localStorage.getItem('userMeals');
+    this.meals = userMeals ? JSON.parse(userMeals) : [];
   }
   saveTotalCaloriesToStorage() {
     const userTotalCalories = String(this.totalCalories);
     localStorage.setItem('userTotalCalories', userTotalCalories);
   }
   getTotalCaloriesFromStorage() {
-    const userCaloriesData = localStorage.getItem('userTotalCalories');
-    this.totalCalories = userCaloriesData ? Number(userCaloriesData) : 0;
+    const userTotalCalories = localStorage.getItem('userTotalCalories');
+    this.totalCalories = userTotalCalories ? Number(userTotalCalories) : 0;
   }
   saveAvgCaloriesToStorage() {
     const userAverageCalories = String(this.avgCalories);
     localStorage.setItem('userAverageCalories', userAverageCalories);
   }
   getAvgCaloriesFromStorage() {
-    const savedData = localStorage.getItem('userAverageCalories');
-    this.avgCalories = savedData ? Number(savedData) : 0;
+    const userAverageCalories = localStorage.getItem('userAverageCalories');
+    this.avgCalories = userAverageCalories ? Number(userAverageCalories) : 0;
   }
   saveMaxCaloriesToStorage() {
     const saveMaxCalories = String(this.maxCalories);
